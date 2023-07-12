@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
 }
 
 header {
@@ -25,4 +26,45 @@ header ul {
     list-style: none;
     font-size: 20px;
     justify-content: space-evenly;
+}
+
+main {
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+h1 {
+    width: 36vw;
+}
+
+button {
+    width: 19vw;
+    height: 7vh;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    color: #FFFFFF;
+    background-color: #FCA60F;
+}
+
+@media (max-width:500px) {
+    header {
+        flex-direction: column;
+    }
+    
+    header div {
+        width: 50vw;
+        justify-content: space-around;
+    }
+
+    header ul {
+        width: 80vw;
+    }
+
+    main figure {
+        display: none;
+    }
 }
